@@ -14,6 +14,6 @@ def Home(request):
         #print(name, email, phone, desc)
         ins = Contact(name=name, number=number, email=email, desc=desc)
         ins.save()
-        print("the data has been written inside the database")
+        # print("the data has been written inside the database")
 
     return render(request, 'home.html')
